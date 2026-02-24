@@ -1,0 +1,115 @@
+/* src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #0f172a; /* Fondo oscuro por defecto para el resto de la app */
+  color: white;
+}
+
+/* --- ESTILOS EXCLUSIVOS DE LA PÁGINA DE BIENVENIDA --- */
+
+/* Contenedor que fuerza pantalla completa y centrado */
+.landing-wrapper {
+  position: fixed; /* Cubre toda la pantalla */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  /* EL DEGRADADO VIOLETA */
+  background: linear-gradient(135deg, #2e1065 0%, #6d28d9 50%, #8b5cf6 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+/* Tarjeta efecto cristal */
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 24px;
+  padding: 3rem;
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icono */
+.icon-box {
+  font-size: 4rem;
+  background: rgba(255, 255, 255, 0.2);
+  width: 90px;
+  height: 90px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+/* Textos */
+.landing-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  line-height: 1.1;
+}
+
+.landing-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Botones */
+.btn-container {
+  display: flex;
+  gap: 15px;
+}
+
+.btn-pill {
+  padding: 12px 30px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: transform 0.2s;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-white {
+  background: white;
+  color: #6d28d9; /* Texto violeta */
+}
+
+.btn-transparent {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.btn-pill:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.footer-landing {
+  position: absolute;
+  bottom: 20px;
+  font-size: 0.8rem;
+  opacity: 0.6;
+}
